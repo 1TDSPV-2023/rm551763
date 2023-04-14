@@ -62,7 +62,7 @@
 .conteudo > div{
     flex-grow: 1;
     flex-shrink: 1; /*reduz proporcionalmente as imgs*/
-    flex-basis: 300px; /*cria uma base para as imgs*/
+    flex-basis: 300px; /*cria uma base para as imagens*/
 }
 
 
