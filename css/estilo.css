@@ -18,3 +18,11 @@
     max-width: 30%;
     display: block;
 }
+
+.cabecalho nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+}
