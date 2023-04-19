@@ -1,0 +1,35 @@
+.rodape{ /*campo total do rodapé*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+    background: linear-gradient(180deg, #ffffff, #000);
+}
+.rodape h2{ /*texto Fale conosco*/
+    text-align: center;
+    text-decoration:underline;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1c1c1c;
+    
+}
+.rodape nav{ /*navbar*/
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+.rodape img{
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.032);
+}
+.rodape img:hover{ /*pseudo classe da tag A*/
+    background-color: #f2f2f221;
+    border: 5px solid #f2f2f221;
+    border-radius: 50px;
+    transition: all ease 0.35s;
+}
+.rodape img{ /*icone de redes sociais*/
+    width: 60px;
+}
