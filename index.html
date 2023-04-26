@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Exemplo Gitpages</title>
 </head>
 <body>
-                   
+
     <header class="cabecalho">
         <img src="./img/logo.png" alt="Monitor de computador">
         <nav>
@@ -19,6 +20,18 @@
     </header>
 
     <h2 class="tit-sec">Seção Foto</h2>
+
+    <div>
+        <button name="botao">CLICK</button>
+        <!-- onclick="alert(querySelector('.conteudo img').src)" -->
+    </div>
+
+    <!-- 
+        innerHTML -> puxar o nome do elemento da pagina HTML
+        this.name -> puxar o nome do elemento
+        querySelector -> puxar o nome das classes do css
+
+     -->
 
     <section class="conteudo">
         <div>
@@ -47,8 +60,6 @@
         </div>
     </section>
 
-
-
     <footer class="rodape">
         <h2>Fale Conosco</h2>
         <!-- <nav>
@@ -74,7 +85,7 @@
 
         -->
         <div>
-            <form action="/action-fake.html" method="get" onsubmit="return true">
+            <form action="./action-fake.html" method="post" onsubmit="return true">
                 <fieldset>
                     <div>
                         <label for="idNm">Nome</label>
@@ -94,8 +105,26 @@
         
     </footer>
 
-    
+    <script>
+        // Declaração de variáveis com a palavra reservada "var"
+        // ()=>{}   : arrow function, cada interação, gera uma variavel no parenteses, que atribui dentro das chaves
 
+        var n1 = 10;
+        var n2 = 5;
+
+        console.log(n1 + n2);
+
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach( (botao)=>{
+
+            if(botao.textContent == "CLICK"){
+                botao.addEventListener("click", ()=>{
+                    alert("Oi");
+                })
+            }
+        });
+
+    </script>
 
 </body>
 </html>
