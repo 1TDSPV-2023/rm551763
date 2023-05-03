@@ -24,10 +24,6 @@
 // console.log("Qual nome vai ser impresso aqui!?", nome);
 
 
-
-
-
-
 // let n1 = 10;
 // let n2 = 5;
 
@@ -38,13 +34,67 @@
 // console.log(resultado);
 
 
-
-
-
 // Recuperar um elemento do HTML com a função getElementById(parâmetro);
-
-const mn = document.getElementById("menu");
-
-console.log(mn.textContent);
+    // const mn = document.getElementById("menu");
+    // console.log(mn.textContent);
 
 
+
+
+
+//AULA 18 - 02/05    AULA 18 - 02/05    AULA 18 - 02/05
+//AULA 18 - 02/05    AULA 18 - 02/05    AULA 18 - 02/05
+
+
+//Declarando uma array em JavaScript
+    // let n1 = [1, 2, 3, 4, 5];
+    // let n2 = [6, 7, 8, 9, 10];
+    // let n3 = [n1, n2];
+    // console.log(n1);
+    // console.log(n2);
+
+
+// operador SPREAD ...
+    // let n3 = [...n1,...n2];
+
+    // n3.forEach( (numero)=>{
+    //     console.log("Item do Array : " + numero);
+    // } );
+
+
+// Recuperando uma colection de elementos...
+    // const aElements = document.getElementsByTagName("a");
+    // const aElementsArray = [...aElements];
+    // aElementsArray.forEach((a)=>{
+    //     console.log(a);
+    // });
+
+
+
+//Recupere uma coleção de imagens da página e imprima o atributo SRC...
+    // const imgElements = [...document.getElementsByTagName("img")];
+    // imgElements.forEach((img)=>{
+    //     console.log(`Path das imagens: ${img.src}`);
+    // });
+
+
+
+const botao = document.querySelector("div > button");
+console.log(botao);
+botao.addEventListener("click", ()=>{
+    alert("GoodBye My Friend!!!");
+});
+
+/* ANOTAÇÕES DA AULA 18 - 02-05
+    
+    "()" variavel que receberá o conteúdo da iteração (uma volta do loop)
+    
+    "<>"" - esteriótipo de uma coleção de array, vem antes de ()
+    
+    "SPREAD" - pega um array e espalha o conteudo
+    
+    "forEach" - loop para exibir cada elemento dentro de um outro elemento/variável (tipo python com o For)
+
+    querySelector - Pega o elemento com base no texto do css
+
+*/
