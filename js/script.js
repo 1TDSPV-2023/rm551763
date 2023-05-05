@@ -181,5 +181,6 @@ let frutas = ["Manga", "Banana", "Laranja", "Maçã", "Melancia", "Framboesa"];
 
 const inputUser = document.querySelector("#idUser");
 inputUser.addEventListener("focus", ()=>{
+    console.log(inputUser);
     inputUser.setAttribute("style", "outline-color: #ff0000;")
 });
