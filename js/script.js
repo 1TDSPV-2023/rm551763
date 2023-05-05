@@ -42,9 +42,8 @@
 
 
 
-//AULA 18 - 02/05    AULA 18 - 02/05    AULA 18 - 02/05
-//AULA 18 - 02/05    AULA 18 - 02/05    AULA 18 - 02/05
-
+//                 AULA 18 - 02/05    AULA 18 - 02/05    AULA 18 - 02/05
+//                 AULA 18 - 02/05    AULA 18 - 02/05    AULA 18 - 02/05
 
 //Declarando uma array em JavaScript
     // let n1 = [1, 2, 3, 4, 5];
@@ -70,7 +69,6 @@
     // });
 
 
-
 //Recupere uma coleção de imagens da página e imprima o atributo SRC...
     // const imgElements = [...document.getElementsByTagName("img")];
     // imgElements.forEach((img)=>{
@@ -78,12 +76,12 @@
     // });
 
 
-
-const botao = document.querySelector("div > button");
-console.log(botao);
-botao.addEventListener("click", ()=>{
-    alert("GoodBye My Friend!!!");
-});
+//Exibir um alert quando ele detectar um evento de click no botão
+    // const botao = document.querySelector("div > button");
+    // console.log(botao);
+    // botao.addEventListener("click", ()=>{
+    //     alert("GoodBye My Friend!!!");
+    // });
 
 /* ANOTAÇÕES DA AULA 18 - 02-05
     
@@ -98,3 +96,83 @@ botao.addEventListener("click", ()=>{
     querySelector - Pega o elemento com base no texto do css
 
 */
+
+
+
+
+
+
+
+// AULA 19 - [04-05]   AULA 19 - [04-05]   AULA 19 - [04-05]   AULA 19 - [04-05]
+// AULA 19 - [04-05]   AULA 19 - [04-05]   AULA 19 - [04-05]   AULA 19 - [04-05]
+
+
+//MANIPULAÇÃO DOS DADOS DO ARRAY:
+
+let frutas = ["Manga", "Banana", "Laranja", "Maçã", "Melancia", "Framboesa"];
+
+        /* INSERÇÃO DE DADOS NO DINAL DO ARRAY [".push"] */
+    // frutas.push("kiwi");
+    // console.log(frutas);
+
+
+        /* INSERÇÃO DE DADOS NO INICIO DO ARRAY [".unshift"] */
+    // frutas.unshift("Melão");
+    // console.log(frutas);
+
+
+        /* REMOVER ITEM NO FINAL DO ARRAY [".pop"] */
+    // frutas.pop();
+    // console.log(frutas);
+
+
+        /* REMOVER ITEM NO INICIO DO ARRAY [".shift"] */
+    // frutas.shift();
+    // console.log(frutas);
+
+
+        /* BUSCA DE UM ITEM NO ARRAY [".indexOf(item)"]
+           indexOf retorna o indice do item, ou seja, a posição dele no array */
+    // let indice = frutas.indexOf("Banana");
+    // console.log(indice);
+
+
+        /* REMOVER UM ITEM DO ARRAY 
+           EM CONJUNTO COM O indexOf 
+           [".splice(<indice>, <qtd vzs será removido>)"] */
+    // console.log("Frutas ANTES de remover LARANJA = " + frutas)
+
+    // let indice = frutas.indexOf("Laranja");
+    // console.log("Laranja está na posição: " + indice);
+
+    // frutas.splice(indice, 1);
+    // console.table("Frutas DEPOIS de remover LARANJA = " + frutas);
+
+
+
+        /* ESTRUTURA DE REPETIÇÃO PARA ITERAÇÃO DE COLLECTIONS */
+    // const aElements = document.querySelectorAll("a");
+    // for(let x = 0; x < aElements.length; x++){
+    //     console.log("Valor = " + aElements[x].textContent);
+    // }
+
+
+        /* forOf 
+        Ele gera um item do array e você pode exibir ele */
+    // for (const fruta of frutas) {
+    //     console.log("Frutas: " + fruta);
+    // }
+
+    
+        /* forIn 
+        Ele pega o lugar do item dentro do array, mas colocando [indice], ele pega o indice no array e puxa o nome do objeto */
+    // for (const indice in frutas) {
+    //     console.log("Fruta: " + frutas[indice]);
+    // }
+    
+    
+        /* MAP 
+        Ele necessita de uma ArrowFunction, atribuindo o valor na variavel, MAIS COMPLETO*/
+    // frutas.map( (fruta, key)=>{
+    //     console.log(`Fruta nº${key+1} = ${fruta}`);
+    // } );
