@@ -176,3 +176,10 @@ let frutas = ["Manga", "Banana", "Laranja", "Maçã", "Melancia", "Framboesa"];
     // frutas.map( (fruta, key)=>{
     //     console.log(`Fruta nº${key+1} = ${fruta}`);
     // } );
+
+
+
+const inputUser = document.querySelector("#idUser");
+inputUser.addEventListener("focus", ()=>{
+    inputUser.setAttribute("style", "outline-color: #ff0000;")
+});
