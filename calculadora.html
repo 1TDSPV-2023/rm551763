@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/calc.js" defer></script>
+    <link rel="stylesheet" href="./css/calc.css">
+    <title>CALCULADORA</title>
+</head>
+<body>
+    <div class="calc">
+        <form action="" method="get" onsubmit="return false">
+            <div class="visor-calc">
+                <input type="text" name="visor" id="idVisor" placeholder="0" disabled>
+            </div>
+            <div class="buttons">
+                <div class="btn-calc-first">
+                    <button value="1" id="btn-1" onclick="inserirNumeroNoVisor(this, idVisor)">1</button>
+                    <button value="2" id="btn-2" onclick="inserirNumeroNoVisor(this, idVisor)">2</button>
+                    <button value="3" id="btn-3" onclick="inserirNumeroNoVisor(this, idVisor)">3</button>
+                    <button value="CE" id="btnLimpar" onclick="limparVisor(idVisor)">CE</button>
+                </div>
+                <div class="btn-calc-second">
+                    <button value="4" id="btn-4" onclick="inserirNumeroNoVisor(this, idVisor)">4</button>
+                    <button value="5" id="btn-5" onclick="inserirNumeroNoVisor(this, idVisor)">5</button>
+                    <button value="6" id="btn-6" onclick="inserirNumeroNoVisor(this, idVisor)">6</button>
+                    <button value="+" id="btnSoma" onclick="inserirNumeroNoVisor(this, idVisor)"> + </button>
+                </div>
+                <div class="btn-calc-third">
+                    <button value="7" id="btn-7" onclick="inserirNumeroNoVisor(this, idVisor)">7</button>
+                    <button value="8" id="btn-8" onclick="inserirNumeroNoVisor(this, idVisor)">8</button>
+                    <button value="9" id="btn-9" onclick="inserirNumeroNoVisor(this, idVisor)">9</button>
+                    <button value="-" id="btnSub" onclick="inserirNumeroNoVisor(this, idVisor)"> - </button>
+                </div>
+                <div class="btn-calc-fourth">
+                    <button value="0" id="btn-0" onclick="inserirNumeroNoVisor(this, idVisor)">0</button>
+                    <button value="." id="btn-point" onclick="inserirNumeroNoVisor(this, idVisor)">,</button>
+                    <button value="*" id="btnMult" onclick="inserirNumeroNoVisor(this, idVisor)"> x </button>
+                    <button value="/" id="btnDiv" onclick="inserirNumeroNoVisor(this, idVisor)"> ÷ </button>
+                </div>
+                <div class="result-calc">
+                    <button value="=" id="btnResult" onclick="resultadoDasOperacoes(idVisor)">=</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
